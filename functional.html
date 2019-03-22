@@ -1,0 +1,52 @@
+<!-- <script>
+    
+function out(a) 
+{
+    var a = document.getElementById("first").value;
+    alert(a);
+}
+
+out(50,60)
+document.write("sum of two number is: "+c);
+</script>
+
+<form>
+    <input type="text" placeholder="Please enter number" id="first"/><br/>
+    <button onclick="out()">Click</button>
+</form> -->
+
+
+<script>
+function cal()
+{
+    var a=parseInt(document.getElementById("one").value);
+    var b=parseInt(document.getElementById("two").value);
+    var c=document.getElementById("chk").value;
+    If (c=="Add")
+    {
+        var d=a+b;
+    }
+    elseif(c=="Subtract")
+    {
+        var d=a-b;
+    }
+    elseif(c=="Multiply")
+    {
+        var d=a*b;
+    }
+    alert (d);
+}
+</script>
+
+<form>
+        <input type="text" placeholder="Please enter number" id="one"/><br/>
+        <input type="text" placeholder="Please enter number" id="two"/><br/>
+        <select id="chk">
+            <option disabled>choose</option>
+            <option>Add</option>
+            <option>Subtract</option>
+            <option>Multiply</option>
+        </select>
+        <button onclick="cal()">Calculate</button>
+</form>
+
